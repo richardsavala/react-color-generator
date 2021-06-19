@@ -4,7 +4,18 @@ import SingleColor from "./SingleColor";
 import Values from "values.js";
 
 function App() {
-  return <h1>yes sir</h1>;
+  const [color, setColor] = useState("");
+  const [error, setError] = useState(false);
+  const [list, setList] = useState([]);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("hello");
+  };
+  return (
+    <>
+      <section className="container">yes sir</section>;
+    </>
+  );
 }
 
 export default App;
